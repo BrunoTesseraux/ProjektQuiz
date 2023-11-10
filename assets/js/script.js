@@ -104,7 +104,7 @@ function checkAnswer(selectedChoice, correctAnswer, choicesContainer) {
   choiceButtons.forEach((button) => {
     button.disabled = true;
 
-    if (button.textContent === correctAnswer) {
+    if (button.textContent === correctAnswer.toString()) {
       button.style.backgroundColor = "green";
     }
 
